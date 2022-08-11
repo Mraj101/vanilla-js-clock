@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    height: 92px;
+    background-color: black;
+    color: white;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    
+}
