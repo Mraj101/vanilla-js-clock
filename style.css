@@ -3,16 +3,29 @@
     padding: 0;
 }
 nav{
-    height: 92px;
+    height: 7vh;
     background-color: black;
     color: white;
     font-size: 22px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
 }
 nav ul{
-    list-style: none;
+    width: 100%;
+    list-style-type: none;
     display: flex;
+    justify-content: space-around;
+}
+
+.tictac{
+    height: calc(100vh - 7vh);
+    background: color #c1c1c1;;
+
+}
+[class^=box-]{
+    background-color: silver;
+    border: 2px solid rgb(31, 25, 25);
+    border-radius: 5px;
     
 }
