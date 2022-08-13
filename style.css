@@ -19,13 +19,20 @@ nav ul{
 }
 
 .tictac{
-    height: calc(100vh - 7vh);
+    height: calc(100vh - 45vh);
     background: color #c1c1c1;;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    max-width: 30vw;
+    margin: 0 auto;
+    padding: 4vh;
 
 }
 [class^=box-]{
     background-color: silver;
     border: 2px solid rgb(31, 25, 25);
-    border-radius: 5px;
-    
+    display: grid;
+    align-content: center;
+    justify-content: center;
 }
