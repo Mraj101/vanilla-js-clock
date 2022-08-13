@@ -29,6 +29,25 @@ nav ul{
     padding: 4vh;
 
 }
+.picdiv{
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+}
+.img>img{
+    border: 2px solid black;
+    height: 20vh;
+    object-fit:fill;
+}
+.picdiv h1{
+    text-align: center;
+    font-weight: 800;
+    font-size: 56px;
+    text-decoration: underline;
+}
 [class^=box-]{
     background-color: silver;
     border: 2px solid rgb(31, 25, 25);
