@@ -5,6 +5,14 @@
 body{
     background-color: rgb(171, 210, 214);
 }
+
+
+
+
+/* styling the nav */
+/* styling the nav */
+/* styling the nav */
+
 nav{
     height: 7vh;
     background-color: black;
@@ -27,6 +35,13 @@ nav ul{
     align-items: center;
     height: 20vh;
 }
+
+
+
+
+/* here grabing the direct child of 
+.img class using a greater than sign */
+
 .img>img{
     height: 40vh;
     object-fit:fill;
@@ -39,6 +54,8 @@ nav ul{
     text-decoration: underline;
 }
 
+
+/* the container(.tictaccontainer) that contains .tictac */
 .tictaccontainer{
     display: flex;
     width: 80vw;
@@ -57,8 +74,14 @@ nav ul{
     padding: 2vh;
     font-size: 46px;
     box-shadow: 1px 1px 20px rgb(44, 47, 49);
-    border: 2px solid rgb(236, 222, 222);
 }
+
+
+
+
+/* we can grab an attribute of a tag like this */
+/* using of ^ means every class name that starts with box */
+/* there are other ways to grab attributes check mdn(search: grabbing attributes in css mdn)*/
 [class^=box]{
     background-color: rgb(236, 222, 222);
     border: 2px solid rgb(31, 25, 25);
@@ -66,6 +89,14 @@ nav ul{
     text-align: center;
     position: relative;
 }
+[class^=box]:hover{
+    background-color: #a37070;
+}
+
+
+
+
+
 .box .boxtext{
     border: none;
     position: absolute;
@@ -96,14 +127,14 @@ nav ul{
     font-family: sans-serif;
 }
 
-[class^=box]:hover{
-    background-color: #a37070;
-}
+
+
+
 
 /* utlity classes */
 /* utlity classes */
 /* utlity classes */
-
+/* created just to use anywhere in the html where required */
 .br-0{
     border-right: 0;
 }
