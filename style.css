@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body{
     background-color: rgb(171, 210, 214);
@@ -28,7 +29,7 @@ nav ul{
 
 
 .picdiv{
-    background-color: yellow;
+    background-color: rgb(0, 255, 115);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -43,9 +44,9 @@ nav ul{
 .img class using a greater than sign */
 
 .img>img{
-    height: 40vh;
-    object-fit:fill;
-    display: none;
+    width: 0vh;
+    /* visibility: none; */
+    
 }
 .picdiv h1{
     text-align: center;
@@ -56,12 +57,13 @@ nav ul{
 
 
 /* the container(.tictaccontainer) that contains .tictac */
-.tictaccontainer{
+.tictaccontainer {
     display: flex;
     width: 80vw;
     margin: 0 auto;
     padding: 20px;
-
+    justify-content: center;
+    align-items: center;
 }
 .tictac{
     height: calc(100vh - 44vh);
@@ -70,7 +72,6 @@ nav ul{
     display:grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(3,1fr);
-    margin: 0 auto;
     padding: 2vh;
     font-size: 46px;
     box-shadow: 1px 1px 20px rgb(44, 47, 49);
@@ -104,22 +105,25 @@ nav ul{
     top: 19%;
 }
 .game-info{
-    background-color: rgb(214, 18, 214);
+    background-color: rgb(55, 52, 218);
     font-size: 20px;
     font-weight: 1000;
     display: flex;
     left: 45vw;
     width: 500px;
     margin: 0 auto;
+    border-radius: 10px;
 }
 .game-info .btn>button{
     width: 200px;
     height: 100%;
     padding: 5px;
     z-index: 1000;
+    border: none;
+    border-radius: 10px;
 }
 .info{
-    border: 2px solid red;
+    border: none;
     width: 300px;
     text-align: center;
     color: white;
