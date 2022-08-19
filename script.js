@@ -3,7 +3,7 @@ let turnaudio=new Audio("ting.mp3");
 let gameover=new Audio("gameover.mp3");
 let isgameover=false;
 let turn = "X"; //we take the first turn for x second one for 0
-
+let win=false;
 //we check if the value of turn is already X after clicking
 //then after the first click we change it to 0
 const changeturn = ()=>{
@@ -39,9 +39,17 @@ function chackwin()
                 document.querySelector('.img').getElementsByTagName('img')[0].style.width="40vh";
                 music.play();
                 isgameover=true;
+                win=true;
+        }
+        if(isgameover==true &&  win==false){
+                document.querySelector('.info').innerHTML='Turn for '+turn;
+
         }
     });
 }
+
+
+
 
 document.querySelector('.info').innerHTML='Turn for '+turn;
 let boxes=document.getElementsByClassName("box");//all the box classes are selected
