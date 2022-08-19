@@ -150,14 +150,22 @@ nav ul{
 
 
 /* queries */
-@media screen and (max-width:375px) {
+@media screen and (max-width:920px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
     .game-info{
         margin-top: 10px;
         width: 60vw;
     }
 
 .tictaccontainer {
-    width: 100vw;
+    height: 50vh;
+    width: 85%;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
 }
 .tictac{

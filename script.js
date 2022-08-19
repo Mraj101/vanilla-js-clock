@@ -36,7 +36,7 @@ function chackwin()
                 document.querySelector('.info').innerText= boxtext[e[0]].innerText +" won";
                 // document.querySelector('.img').getElementsByTagName('img')[0].style.visibility="visible";
 
-                document.querySelector('.img').getElementsByTagName('img')[0].style.width="40vh";
+                document.querySelector('.img').getElementsByTagName('img')[0].style.width="35vh";
                 music.play();
                 isgameover=true;
                 win=true;
